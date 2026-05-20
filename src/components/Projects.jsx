@@ -8,7 +8,7 @@ const projects_data = [
     year: '2024',
     desc: 'Sistem informasi kampus komprehensif yang menghubungkan 2000+ mahasiswa. Dilengkapi pengumuman real-time, jadwal akademik, dan peta kampus interaktif.',
     tags: ['React', 'Node.js', 'Tailwind', 'PostgreSQL'],
-    color: '#c1121f',
+    color: '#ff857a',
     stats: { pengguna: '2K+', uptime: '99.9%' },
     img: '🎓',
   },
@@ -19,7 +19,7 @@ const projects_data = [
     year: '2024',
     desc: 'Platform e-commerce modern yang elegan untuk merek fashion lokal. Berfokus pada animasi halus, alur pembayaran tanpa hambatan, dan etalase produk bergaya editorial.',
     tags: ['Next.js', 'Framer Motion', 'Stripe API'],
-    color: '#8b0000',
+    color: '#d35b4f',
     stats: { konversi: '+45%', speed: '<1s' },
     img: '👗',
   },
@@ -41,7 +41,7 @@ const projects_data = [
     year: '2023',
     desc: 'Rebranding lengkap identitas visual organisasi siswa. Meliputi desain ulang logo, templat media sosial, dan materi promosi acara.',
     tags: ['Illustrator', 'Photoshop', 'Figma'],
-    color: '#ff7b7b',
+    color: '#ffa89f',
     stats: { interaksi: '+150%', aset: '50+' },
     img: '🎨',
   },
@@ -52,13 +52,13 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-24 overflow-hidden"
-      style={{ background: '#060000' }}>
+      style={{ background: '#0a0505' }}>
 
       {/* Decorative bg lines */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full"
-        style={{ background: 'linear-gradient(180deg,transparent,rgba(193,18,31,0.1),transparent)' }} />
+        style={{ background: 'linear-gradient(180deg,transparent,rgba(255, 133, 122,0.1),transparent)' }} />
       <div className="absolute top-1/2 left-0 w-full h-[1px]"
-        style={{ background: 'linear-gradient(90deg,transparent,rgba(193,18,31,0.1),transparent)' }} />
+        style={{ background: 'linear-gradient(90deg,transparent,rgba(255, 133, 122,0.1),transparent)' }} />
 
       <div className="w-full max-w-6xl mx-auto px-4 md:px-8 relative z-10">
 

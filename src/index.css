@@ -19,14 +19,14 @@
 
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    background-color: #060000; /* deep dark background */
+    background-color: #0a0505; /* deep dark background */
     color: #ffd6d6;
     line-height: 1.7;
     overflow-x: hidden;
   }
 
   ::selection {
-    background-color: #c1121f;
+    background-color: #ff857a;
     color: #fff;
   }
 
@@ -35,16 +35,16 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #100000;
+    background: #140808;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #c1121f, #8b0000);
+    background: linear-gradient(180deg, #ff857a, #d35b4f);
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #e63946, #c1121f);
+    background: linear-gradient(180deg, #e63946, #ff857a);
   }
 }
 
@@ -54,7 +54,7 @@
   /* Section titles */
   .section-title {
     @apply font-display font-extrabold tracking-tight;
-    background: linear-gradient(135deg, #ffc8c8 0%, #c1121f 50%, #8b0000 100%);
+    background: linear-gradient(135deg, #ffe8e5 0%, #ff857a 50%, #d35b4f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -62,7 +62,7 @@
 
   .section-subtitle {
     @apply font-sans text-sm uppercase tracking-[0.3em] font-medium;
-    color: rgba(193, 18, 31, 0.7);
+    color: rgba(255, 133, 122, 0.7);
   }
 
   /* Divider */
@@ -70,36 +70,36 @@
     @apply mx-auto my-6;
     width: 60px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #c1121f, #8b0000, transparent);
+    background: linear-gradient(90deg, transparent, #ff857a, #d35b4f, transparent);
   }
 
   .editorial-divider-left {
     @apply my-5;
     width: 60px;
     height: 2px;
-    background: linear-gradient(90deg, #c1121f, #8b0000, transparent);
+    background: linear-gradient(90deg, #ff857a, #d35b4f, transparent);
   }
 
   /* Glass card – dark variant */
   .glass-card {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(193, 18, 31, 0.18);
+    border: 1px solid rgba(255, 133, 122, 0.18);
   }
 
   /* Red card */
   .red-card {
-    background: linear-gradient(135deg, rgba(193, 18, 31, 0.2) 0%, rgba(139, 0, 0, 0.15) 100%);
-    border: 1px solid rgba(193, 18, 31, 0.3);
+    background: linear-gradient(135deg, rgba(255, 133, 122, 0.2) 0%, rgba(211, 91, 79, 0.15) 100%);
+    border: 1px solid rgba(255, 133, 122, 0.3);
     backdrop-filter: blur(12px);
     @apply rounded-2xl;
-    box-shadow: 0 8px 32px rgba(193, 18, 31, 0.15);
+    box-shadow: 0 8px 32px rgba(255, 133, 122, 0.15);
   }
 
   /* Dark solid card */
   .dark-card {
-    background: rgba(26, 0, 0, 0.9);
-    border: 1px solid rgba(193, 18, 31, 0.15);
+    background: rgba(45, 18, 15, 0.9);
+    border: 1px solid rgba(255, 133, 122, 0.15);
     backdrop-filter: blur(12px);
     @apply rounded-2xl;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -112,12 +112,12 @@
 
   .hover-lift:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 60px rgba(193, 18, 31, 0.25);
+    box-shadow: 0 20px 60px rgba(255, 133, 122, 0.25);
   }
 
   /* Red gradient text */
   .text-gradient {
-    background: linear-gradient(135deg, #ffc8c8 0%, #c1121f 50%, #8b0000 100%);
+    background: linear-gradient(135deg, #ffe8e5 0%, #ff857a 50%, #d35b4f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -139,7 +139,7 @@
     content: '';
     @apply absolute bottom-0 left-0 w-0 transition-all duration-500;
     height: 1px;
-    background: linear-gradient(90deg, #c1121f, #8b0000);
+    background: linear-gradient(90deg, #ff857a, #d35b4f);
   }
 
   .animated-underline:hover::after {
@@ -149,45 +149,45 @@
   /* Red button */
   .btn-red {
     @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-display font-semibold text-white transition-all duration-300 overflow-hidden;
-    background: linear-gradient(135deg, #c1121f, #8b0000);
-    box-shadow: 0 4px 20px rgba(193, 18, 31, 0.4);
+    background: linear-gradient(135deg, #ff857a, #d35b4f);
+    box-shadow: 0 4px 20px rgba(255, 133, 122, 0.4);
   }
 
   .btn-red:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 40px rgba(193, 18, 31, 0.6);
+    box-shadow: 0 8px 40px rgba(255, 133, 122, 0.6);
   }
 
   .btn-outline {
     @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-display font-semibold transition-all duration-300;
-    border: 1.5px solid rgba(193, 18, 31, 0.5);
+    border: 1.5px solid rgba(255, 133, 122, 0.5);
     color: #ff9999;
   }
 
   .btn-outline:hover {
-    background: rgba(193, 18, 31, 0.1);
-    border-color: #c1121f;
-    box-shadow: 0 4px 20px rgba(193, 18, 31, 0.2);
+    background: rgba(255, 133, 122, 0.1);
+    border-color: #ff857a;
+    box-shadow: 0 4px 20px rgba(255, 133, 122, 0.2);
   }
 
   /* Glow dot decoration */
   .glow-dot {
     @apply rounded-full;
-    background: radial-gradient(circle, #c1121f 0%, rgba(193, 18, 31, 0) 70%);
+    background: radial-gradient(circle, #ff857a 0%, rgba(255, 133, 122, 0) 70%);
   }
 
   /* Tag badge */
   .tag-badge {
     @apply px-3 py-1 rounded-full text-[10px] uppercase tracking-wider font-medium;
-    background: rgba(193, 18, 31, 0.12);
-    border: 1px solid rgba(193, 18, 31, 0.25);
+    background: rgba(255, 133, 122, 0.12);
+    border: 1px solid rgba(255, 133, 122, 0.25);
     color: #ff9999;
   }
 
   .tag-badge:hover {
-    background: rgba(193, 18, 31, 0.25);
-    border-color: rgba(193, 18, 31, 0.5);
-    color: #ffc8c8;
+    background: rgba(255, 133, 122, 0.25);
+    border-color: rgba(255, 133, 122, 0.5);
+    color: #ffe8e5;
   }
 
   /* Decorative star */
@@ -200,7 +200,7 @@
   /* Flower / blob deco */
   .blob-deco {
     @apply absolute rounded-full;
-    background: radial-gradient(circle, rgba(193, 18, 31, 0.3), transparent 70%);
+    background: radial-gradient(circle, rgba(255, 133, 122, 0.3), transparent 70%);
     filter: blur(40px);
   }
 
@@ -208,7 +208,7 @@
   .section-number {
     @apply font-display font-black;
     font-size: clamp(5rem, 15vw, 12rem);
-    background: linear-gradient(135deg, rgba(193, 18, 31, 0.08) 0%, rgba(139, 0, 0, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(255, 133, 122, 0.08) 0%, rgba(211, 91, 79, 0.05) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -229,14 +229,14 @@
 
 /* ===== Background Patterns ===== */
 .dot-pattern {
-  background-image: radial-gradient(circle, rgba(193, 18, 31, 0.12) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(255, 133, 122, 0.12) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
 .grid-pattern {
   background-image:
-    linear-gradient(rgba(193, 18, 31, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(193, 18, 31, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(255, 133, 122, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 133, 122, 0.04) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -287,29 +287,29 @@
 
 /* ===== Red Glow Ring ===== */
 .glow-ring {
-  box-shadow: 0 0 0 1px rgba(193, 18, 31, 0.3), 0 0 20px rgba(193, 18, 31, 0.2);
+  box-shadow: 0 0 0 1px rgba(255, 133, 122, 0.3), 0 0 20px rgba(255, 133, 122, 0.2);
 }
 
 .glow-ring:hover {
-  box-shadow: 0 0 0 1px rgba(193, 18, 31, 0.6), 0 0 40px rgba(193, 18, 31, 0.4);
+  box-shadow: 0 0 0 1px rgba(255, 133, 122, 0.6), 0 0 40px rgba(255, 133, 122, 0.4);
 }
 
 /* ===== Decorative Divider Line ===== */
 .red-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(193, 18, 31, 0.5), rgba(139, 0, 0, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 133, 122, 0.5), rgba(211, 91, 79, 0.5), transparent);
 }
 
 /* ===== Custom gradient bg for hero ===== */
 .hero-bg {
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(60, 2, 10, 0.9) 0%, #060000 60%),
-              radial-gradient(ellipse 50% 40% at 90% 80%, rgba(139, 0, 0, 0.2) 0%, transparent 60%),
-              radial-gradient(ellipse 50% 40% at 10% 50%, rgba(193, 18, 31, 0.15) 0%, transparent 60%);
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(60, 2, 10, 0.9) 0%, #0a0505 60%),
+              radial-gradient(ellipse 50% 40% at 90% 80%, rgba(211, 91, 79, 0.2) 0%, transparent 60%),
+              radial-gradient(ellipse 50% 40% at 10% 50%, rgba(255, 133, 122, 0.15) 0%, transparent 60%);
 }
 
 /* ===== Card gradient overlays ===== */
 .card-glow-top {
-  background: linear-gradient(180deg, rgba(193, 18, 31, 0.12) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(255, 133, 122, 0.12) 0%, transparent 100%);
 }
 
 /* ===== Flowing border animation ===== */
@@ -320,7 +320,7 @@
 }
 
 .animated-border {
-  background: linear-gradient(270deg, #c1121f, #8b0000, #ff7b7b, #c1121f);
+  background: linear-gradient(270deg, #ff857a, #d35b4f, #ffa89f, #ff857a);
   background-size: 300% 300%;
   animation: borderFlow 4s ease infinite;
 }

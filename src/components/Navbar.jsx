@@ -43,15 +43,15 @@ export default function Navbar() {
       <div
         className="relative flex items-center justify-center px-4 py-2 w-auto rounded-full"
         style={{
-          background: scrolled ? 'rgba(26,0,0,0.9)' : 'rgba(26,0,0,0.6)',
+          background: scrolled ? 'rgba(45, 18, 15,0.9)' : 'rgba(45, 18, 15,0.6)',
           backdropFilter: 'blur(20px)',
-          border: '1px solid rgba(193,18,31,0.2)',
+          border: '1px solid rgba(255, 133, 122,0.2)',
           boxShadow: scrolled ? '0 10px 40px rgba(0,0,0,0.6)' : 'none',
         }}
       >
         {/* Glow effect around navbar */}
         <div className="absolute inset-0 rounded-full pointer-events-none"
-          style={{ boxShadow: 'inset 0 0 20px rgba(193,18,31,0.05)' }} />
+          style={{ boxShadow: 'inset 0 0 20px rgba(255, 133, 122,0.05)' }} />
 
         {/* Links */}
         <div className="flex items-center gap-1 relative z-10">
@@ -69,9 +69,9 @@ export default function Navbar() {
                 <span
                   className="absolute inset-0 rounded-full -z-10"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(193,18,31,0.25), rgba(139,0,0,0.15))',
-                    border: '1px solid rgba(193,18,31,0.4)',
-                    boxShadow: '0 0 15px rgba(193,18,31,0.3)',
+                    background: 'linear-gradient(135deg, rgba(255, 133, 122,0.25), rgba(211, 91, 79,0.15))',
+                    border: '1px solid rgba(255, 133, 122,0.4)',
+                    boxShadow: '0 0 15px rgba(255, 133, 122,0.3)',
                   }}
                 />
               )}
