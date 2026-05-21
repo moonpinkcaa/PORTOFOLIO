@@ -3,47 +3,72 @@ import { useState } from 'react';
 const projects_data = [
   {
     id: 1,
-    title: 'Sistem Info Kampus Pintar',
-    category: 'Aplikasi Web Fullstack',
-    year: '2024',
-    desc: 'Sistem informasi kampus komprehensif yang menghubungkan 2000+ mahasiswa. Dilengkapi pengumuman real-time, jadwal akademik, dan peta kampus interaktif.',
-    tags: ['React', 'Node.js', 'Tailwind', 'PostgreSQL'],
+    title: 'U-Voice',
+    category: 'web Frontend',
+    year: '2025',
+    desc: 'Platfor sistem aspirasi & forum diskusi mahasiswa.',
+    tags: ['css', 'javascript', 'Tailwind', 'MySQL'],
     color: '#ff857a',
-    stats: { pengguna: '2K+', uptime: '99.9%' },
-    img: '🎓',
+    stats: {},
+    img: "/logo_u-voice.png",
   },
   {
     id: 2,
-    title: 'E-Commerce Merek Fashion',
-    category: 'UI/UX & Frontend',
-    year: '2024',
-    desc: 'Platform e-commerce modern yang elegan untuk merek fashion lokal. Berfokus pada animasi halus, alur pembayaran tanpa hambatan, dan etalase produk bergaya editorial.',
-    tags: ['Next.js', 'Framer Motion', 'Stripe API'],
+    title: 'Work4Village',
+    category: 'Frontend development',
+    year: '2026',
+    desc: 'Platfrom digital manajemen pemberdayaan masyarakat desa.',
+    tags: ['Next.js', 'node.js', 'laravel'],
     color: '#d35b4f',
     stats: { konversi: '+45%', speed: '<1s' },
     img: '👗',
   },
   {
     id: 3,
-    title: 'Dasbor Manajemen Jastip',
-    category: 'Dasbor Admin',
-    year: '2023',
-    desc: 'Dasbor internal untuk mengelola pesanan jasa titip (jastip), pelacakan paket, dan pembuatan faktur otomatis dengan integrasi API WhatsApp.',
-    tags: ['Vue.js', 'Express', 'WA-Baileys'],
+    title: 'Laundr app',
+    category: 'Portotipe UI/UX',
+    year: '2025',
+    desc: 'Portotipe aplikasi mobile sistem operasional dan efiseiensi layanan Laundry.',
+    tags: ['Figma'],
     color: '#e63946',
     stats: { pesanan: '500+', dihemat: '10jam/mgg' },
     img: '🛍️',
   },
   {
     id: 4,
-    title: 'Branding Organisasi Siswa',
-    category: 'Identitas Visual',
-    year: '2023',
-    desc: 'Rebranding lengkap identitas visual organisasi siswa. Meliputi desain ulang logo, templat media sosial, dan materi promosi acara.',
-    tags: ['Illustrator', 'Photoshop', 'Figma'],
+    title: 'Five Finace',
+    category: 'Prototipe UI/UX',
+    year: '2024',
+    desc: 'Portotipe aplikasi mobile pengelolaan keuangan untuk pelaku UMKM.',
+    tags: ['Figma'],
     color: '#ffa89f',
     stats: { interaksi: '+150%', aset: '50+' },
     img: '🎨',
+
+  },
+  {
+    id: 5,
+    title: 'Aplikasi Apotik',
+    category: 'backend development',
+    year: '2024',
+    desc: 'Sistem otomatisasi pencatatan data obat dan transaksi apotik.',
+    tags: ['Figma'],
+    color: '#ffa89f',
+    stats: { interaksi: '+150%', aset: '50+' },
+    img: '🎨',
+
+  },
+  {
+    id: 5,
+    title: 'Yapprece_MarketPlace',
+    category: 'System Analysis',
+    year: '2025',
+    desc: 'Sistem market place berbasis microservice.',
+    tags: ['Figma'],
+    color: '#ffa89f',
+    stats: { interaksi: '+150%', aset: '50+' },
+    img: '🎨',
+
   },
 ];
 
@@ -64,12 +89,9 @@ export default function Projects() {
 
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20 reveal">
-          <p className="section-subtitle mb-4">karya pilihan</p>
-          <h2 className="section-title text-4xl md:text-5xl mb-6">proyek unggulan</h2>
-          <p className="text-sm" style={{ color: 'rgba(255,180,180,0.6)' }}>
-            Kumpulan karya teknis dan upaya kreatif.
-            Menyatukan logika dan estetika untuk memecahkan masalah dunia nyata.
-          </p>
+
+          <h2 className="section-title text-4xl md:text-5xl mb-6">Work Archive</h2>
+
         </div>
 
         {/* Project List */}
@@ -110,10 +132,18 @@ export default function Projects() {
                         opacity: hoveredId === project.id ? 0.6 : 0.3,
                       }} />
 
-                    {/* Center Emoji/Icon */}
-                    <div className="absolute inset-0 flex items-center justify-center text-7xl md:text-8xl transition-transform duration-500"
+                    {/* Center Emoji/Icon / Image */}
+                    <div className="absolute inset-0 flex items-center justify-center transition-transform duration-500"
                       style={{ transform: hoveredId === project.id ? 'scale(1.1)' : 'scale(1)' }}>
-                      {project.img}
+                      {project.img && (project.img.startsWith('/') || project.img.includes('.')) ? (
+                        <img 
+                          src={project.img} 
+                          alt={project.title} 
+                          className="w-full h-full object-cover" 
+                        />
+                      ) : (
+                        <span className="text-7xl md:text-8xl">{project.img}</span>
+                      )}
                     </div>
 
                     {/* Bottom Stat Bar */}

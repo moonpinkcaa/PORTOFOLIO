@@ -1,46 +1,61 @@
 const experiences = [
   {
     num: '01',
-    title: 'Graphic Designer',
-    org: 'Freelance',
-    period: '2022 — Sekarang',
-    desc: 'Membuat desain visual untuk berbagai kebutuhan klien mulai dari branding, poster, hingga konten media sosial dengan pendekatan kreatif dan estetis.',
+    title: 'Jiokyy_',
+    org: 'Academic & Design Assistant',
+    period: '2025 - Sekarang',
+    desc: 'Membantu pembuatan desain presentasi, konten visual, editing, dan pendampingan tugas akademik sesuai kebutuhan klient.',
   },
   {
     num: '02',
-    title: 'UI/UX Designer',
-    org: 'Proyek Akademik',
-    period: '2023 — Sekarang',
-    desc: 'Merancang antarmuka pengguna yang intuitif dan user-friendly untuk berbagai proyek kampus dan kompetisi.',
+    title: 'Budi Pekerti',
+    org: 'Koor pengembangan karakter',
+    period: '2024 - 2025',
+    desc: 'Bertanggung jawab penuh pada divisi pengembangan karakter dan melaksanakan kegiatan budi pekerti',
   },
   {
     num: '03',
-    title: 'Content Creator',
-    org: 'Media Sosial',
-    period: '2023 — Sekarang',
-    desc: 'Membuat konten kreatif untuk platform media sosial, menggabungkan desain visual dengan storytelling yang menarik.',
+    title: 'Cyvero',
+    org: 'Anggota Visualizer',
+    period: '2024 - 2025',
+    desc: 'Membuat desain foto & video promosi, mengolah konten media sosial yang meningkatkan partisipasi peserta.',
   },
   {
     num: '04',
-    title: 'Staff Divisi Kreatif',
-    org: 'Organisasi Kampus',
-    period: '2023 — 2024',
-    desc: 'Bertanggung jawab atas desain visual dan branding untuk kegiatan organisasi serta event kampus.',
+    title: 'Komunitas Sosial Sistem Informasi ',
+    org: 'Anggota divisi Acara',
+    period: '2025 - 2026',
+    desc: 'Merancang program kerja dengan fokus pada pemberdayaan sosial edukasi masyrakat',
   },
   {
     num: '05',
-    title: 'Social Media Manager',
-    org: 'Komunitas',
-    period: '2023 — 2024',
-    desc: 'Mengelola strategi konten dan meningkatkan engagement di berbagai platform media sosial komunitas.',
+    title: 'How to improve a good habit',
+    org: 'Ketua Plaksana Seminar ',
+    period: '2024',
+    desc: ' Bertanggung jawab mengatur seluruh jalannya acara mulai dari konsep, teknis, hingga pelaporan. ',
   },
   {
     num: '06',
-    title: 'Event Organizer',
-    org: 'Social Event',
+    title: 'Developing Strog Character',
+    org: 'Wakil ketua pelaksana webinar',
     period: '2024',
-    desc: 'Terlibat dalam perencanaan dan pelaksanaan event, mulai dari konsep kreatif hingga eksekusi visual.',
+    desc: 'bertugas membantu ketua pelaksana dan mengeksekusi setiap arahan dari ketua pelaksana.',
   },
+  {
+    num: '07',
+    title: 'First Meet Penerima Beasiwa Telkom University 2024',
+    org: 'Logistic & Design Grapich',
+    period: '2024',
+    desc: 'publikasi, dokumentasi, desain, dan membantu menyiapkan kebutuhan acara. ',
+  },
+  {
+    num: '08',
+    title: 'Study Group',
+    org: 'Wakil ketua pelaksana webinar',
+    period: '2024',
+    desc: 'bertugas membantu ketua pelaksana dan mengeksekusi setiap arahan dari ketua pelaksana.',
+  },
+
 ];
 
 export default function Experience() {
@@ -75,10 +90,7 @@ export default function Experience() {
 
         {/* ── Section header ── */}
         <div className="mb-12 md:mb-16 reveal">
-          <p className="text-[11px] uppercase tracking-[0.35em] font-display font-medium mb-4"
-            style={{ color: 'rgba(255, 133, 122,0.6)' }}>
-            Pengalaman
-          </p>
+
           <h2 className="font-display font-black leading-[1.05]"
             style={{
               fontSize: 'clamp(2rem, 5vw, 3.5rem)',
@@ -144,17 +156,25 @@ export default function Experience() {
                     {/* Top row: number badge + period */}
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center gap-3">
-                        {/* Number badge */}
-                        <div className="w-10 h-10 rounded-xl flex items-center justify-center"
+                        {/* Number badge or Logo */}
+                        <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden"
                           style={{
-                            background: '#e8e8e8',
+                            background: exp.logo ? 'rgba(255,255,255,0.05)' : '#e8e8e8',
                             border: '1px solid rgba(255, 133, 122,0.35)',
                             boxShadow: '0 0 16px rgba(255, 133, 122,0.15)',
                           }}>
-                          <span className="text-xs font-display font-black"
-                            style={{ color: '#040100ff' }}>
-                            {exp.num}
-                          </span>
+                          {exp.logo ? (
+                            <img 
+                              src={exp.logo} 
+                              alt={exp.title} 
+                              className="w-full h-full object-contain p-1" 
+                            />
+                          ) : (
+                            <span className="text-xs font-display font-black"
+                              style={{ color: '#040100ff' }}>
+                              {exp.num}
+                            </span>
+                          )}
                         </div>
                         {/* Org tag */}
                         <span className="text-[10px] uppercase tracking-wider font-display font-semibold px-2.5 py-1 rounded-full"
