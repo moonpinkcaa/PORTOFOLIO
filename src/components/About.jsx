@@ -165,6 +165,108 @@ export default function About() {
           </div>
 
         </div>
+
+        {/* ── Bento Grid: Skill Saya ── */}
+        <div className="mt-16 md:mt-24 reveal">
+          {/* Header Bento */}
+          <div className="mb-8 text-center md:text-left">
+            <p className="text-[11px] uppercase tracking-[0.35em] font-display font-medium mb-2"
+              style={{ color: 'rgba(255, 133, 122,0.6)' }}>
+              Keahlian
+            </p>
+            <h3 className="font-display font-bold text-2xl md:text-3xl text-white">
+              Skill & Kompetensi
+            </h3>
+          </div>
+
+          {/* Bento Box */}
+          <div
+            className="relative rounded-3xl overflow-hidden p-8 md:p-12 transition-all duration-500"
+            style={{
+              background: 'linear-gradient(160deg, rgba(194, 83, 71, 0.08) 0%, rgba(45, 18, 15, 0.4) 50%, rgba(10, 5, 5, 0.95) 100%)',
+              border: '1px solid rgba(255, 133, 122, 0.12)',
+              boxShadow: '0 10px 40px rgba(0, 0, 0, 0.6), inset 0 0 30px rgba(255, 133, 122, 0.02)',
+            }}
+          >
+            {/* Glowing decorative background dots/stars */}
+            <div className="absolute inset-0 pointer-events-none opacity-40">
+              <span className="absolute text-[8px] animate-pulse" style={{ top: '15%', left: '10%', color: 'rgba(255, 133, 122, 0.4)' }}>✦</span>
+              <span className="absolute text-[6px] animate-pulse" style={{ top: '75%', left: '8%', color: 'rgba(255, 133, 122, 0.3)', animationDelay: '1s' }}>✦</span>
+              <span className="absolute text-[10px] animate-pulse" style={{ top: '25%', right: '12%', color: 'rgba(255, 133, 122, 0.5)', animationDelay: '0.5s' }}>✦</span>
+              <span className="absolute text-[7px] animate-pulse" style={{ top: '80%', right: '20%', color: 'rgba(255, 133, 122, 0.2)', animationDelay: '1.5s' }}>✦</span>
+              <span className="absolute text-[6px] animate-pulse" style={{ top: '50%', left: '50%', color: 'rgba(255, 133, 122, 0.3)', animationDelay: '2s' }}>✦</span>
+
+              <div className="absolute inset-0"
+                style={{
+                  backgroundImage: 'radial-gradient(circle, rgba(255, 133, 122, 0.04) 1px, transparent 1px)',
+                  backgroundSize: '24px 24px',
+                }} />
+            </div>
+
+            {/* Inner Content Grid */}
+            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+              {/* Left text message inside bento */}
+              <div className="max-w-md text-center lg:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-display font-medium mb-4"
+                  style={{
+                    background: 'rgba(255, 133, 122, 0.08)',
+                    border: '1px solid rgba(255, 133, 122, 0.15)',
+                    color: '#ffa89f'
+                  }}>
+                  <span>Tech Stack & Tools</span>
+                </div>
+                <p className="text-sm md:text-base leading-relaxed text-white font-medium mb-2">
+                  Menggabungkan kreativitas desain dengan logika pemrograman.
+                </p>
+                <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,180,180,0.5)' }}>
+                  Fokus pada pembuatan solusi digital yang fungsional, bersih, dan berpusat pada kenyamanan pengguna.
+                </p>
+              </div>
+
+              {/* Right: The floating skills container */}
+              <div className="flex flex-wrap justify-center lg:justify-end gap-3 max-w-lg">
+                {[
+                  { name: 'Design Graphics', color: '#e8e8e8', icon: '🎨' },
+                  { name: 'FrontEnd Dev', color: '#e8e8e8', icon: '💻' },
+                  { name: 'Figma', color: '#e8e8e8', icon: '📐' },
+                  { name: 'React', color: '#e8e8e8', icon: '⚛️' },
+                  { name: 'Canva', color: '#e8e8e8', icon: '🍃' },
+                  { name: 'Python', color: '#e8e8e8', icon: '🐍' },
+                  { name: 'Ms. Office', color: '#e8e8e8', icon: '📊' },
+                ].map((skill, index) => (
+                  <div
+                    key={skill.name}
+                    className="group flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 cursor-default font-display font-medium text-xs md:text-sm text-white"
+                    style={{
+                      background: '#e8e8e8',
+                      border: '1px solid rgba(255, 133, 122,0.3)',
+                      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                      animation: `float 4s ease-in-out infinite`,
+                      animationDelay: `${index * 0.3}s`,
+                      color: "#b24c40"
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.background = skill.color;
+                      e.currentTarget.style.borderColor = 'rgba(255, 133, 122, 0.5)';
+                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 133, 122, 0.2)';
+                      e.currentTarget.style.transform = 'translateY(-3px) scale(1.03)';
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
+                      e.currentTarget.style.borderColor = 'rgba(255, 133, 122, 0.15)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+                      e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                    }}
+                  >
+                    <span>{skill.icon}</span>
+                    <span>{skill.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       {/* ── Separator ── */}

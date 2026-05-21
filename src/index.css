@@ -324,3 +324,13 @@
   background-size: 300% 300%;
   animation: borderFlow 4s ease infinite;
 }
+
+/* ===== Floating Animation for Skills Bento ===== */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
