@@ -20,6 +20,7 @@ const projects_data = [
     desc: 'Platfrom digital manajemen pemberdayaan masyarakat desa.',
     tags: ['Next.js', 'node.js', 'laravel'],
     color: '#d35b4f',
+    stats: {},
     img: '/logo_wor4.png',
   },
   {
@@ -30,6 +31,7 @@ const projects_data = [
     desc: 'Portotipe aplikasi mobile sistem operasional dan efiseiensi layanan Laundry.',
     tags: ['Figma'],
     color: '#e63946',
+    stats: {},
     img: '/logo_laundryapp.jpeg',
   },
   {
@@ -40,8 +42,8 @@ const projects_data = [
     desc: 'Portotipe aplikasi mobile pengelolaan keuangan untuk pelaku UMKM.',
     tags: ['Figma'],
     color: '#ffa89f',
+    stats: {},
     img: '/logo_Five Finace.png',
-
   },
   {
     id: 5,
@@ -51,19 +53,19 @@ const projects_data = [
     desc: 'Sistem otomatisasi pencatatan data obat dan transaksi apotik.',
     tags: ['Figma'],
     color: '#ffa89f',
+    stats: {},
     img: '/logo_apotik.png',
-
   },
   {
-    id: 5,
+    id: 6,
     title: 'Yapprece_MarketPlace',
     category: 'System Analysis',
     year: '2025',
     desc: 'Sistem market place berbasis microservice.',
     tags: ['Figma'],
     color: '#ffa89f',
+    stats: {},
     img: '/logo_yaparace.jpeg',
-
   },
 ];
 
@@ -148,7 +150,7 @@ export default function Projects() {
                         transform: hoveredId === project.id ? 'translateY(0)' : 'translateY(100%)',
                       }}>
                       <div className="flex justify-between items-center text-xs font-display">
-                        {Object.entries(project.stats).map(([key, val]) => (
+                        {Object.entries(project.stats || {}).map(([key, val]) => (
                           <div key={key} className="flex flex-col">
                             <span style={{ color: 'rgba(255,255,255,0.4)' }}>{key}</span>
                             <span className="font-bold" style={{ color: project.color }}>{val}</span>
