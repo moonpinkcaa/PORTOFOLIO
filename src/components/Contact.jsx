@@ -118,7 +118,6 @@ export default function Contact() {
                   onMouseEnter={e => e.currentTarget.style.color = '#ffffff'}
                   onMouseLeave={e => e.currentTarget.style.color = 'rgba(255, 180, 180, 0.85)'}
                 >
-                  anisafatimamatuszahro@gmail.com
                 </a>
 
               </div>
@@ -134,7 +133,7 @@ export default function Contact() {
                   }}
                 >
                   <img
-                    src="/FOTO_DIRI.jpeg"
+                    src="/me.jpg"
                     alt="Anisa Fatimamatus Z."
                     className="w-full h-full object-cover object-top rounded-xl"
                   />

@@ -7,8 +7,8 @@ export default function Activities() {
       text: 'Creative Process'
     },
     {
-      image: '/pengalaman2.jpeg',
-      text: 'Digital Art'
+      image: '/pengalaman2.jpg',
+      text: 'Seminar How To Improve a Good Habit'
     },
     {
       image: '/pengalaman3.jpeg',
@@ -16,19 +16,19 @@ export default function Activities() {
     },
     {
       image: '/pengalaman4.jpeg',
-      text: 'Branding & UI/UX'
+      text: 'Ospek jurusan HMSI 2024'
     },
     {
-      image: 'pengalaman5.jpeg',
-      text: 'Brainstorming'
+      image: 'pengalaman5.jpg',
+      text: 'First meet beasiswa 2024'
     },
     {
       image: 'pengalaman6.jpeg',
-      text: 'Web Development'
+      text: 'Cyvero'
     },
     {
       image: 'pengalaman7.jpeg',
-      text: 'Interface Layout'
+      text: 'Rapat Divisi Pengembangan Karakter'
     },
     {
       image: 'pengalaman8.jpeg',

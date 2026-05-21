@@ -20,8 +20,7 @@ const projects_data = [
     desc: 'Platfrom digital manajemen pemberdayaan masyarakat desa.',
     tags: ['Next.js', 'node.js', 'laravel'],
     color: '#d35b4f',
-    stats: { konversi: '+45%', speed: '<1s' },
-    img: '👗',
+    img: '/logo_wor4.png',
   },
   {
     id: 3,
@@ -31,8 +30,7 @@ const projects_data = [
     desc: 'Portotipe aplikasi mobile sistem operasional dan efiseiensi layanan Laundry.',
     tags: ['Figma'],
     color: '#e63946',
-    stats: { pesanan: '500+', dihemat: '10jam/mgg' },
-    img: '🛍️',
+    img: '/logo_laundryapp.jpeg',
   },
   {
     id: 4,
@@ -42,8 +40,7 @@ const projects_data = [
     desc: 'Portotipe aplikasi mobile pengelolaan keuangan untuk pelaku UMKM.',
     tags: ['Figma'],
     color: '#ffa89f',
-    stats: { interaksi: '+150%', aset: '50+' },
-    img: '🎨',
+    img: '/logo_Five Finace.png',
 
   },
   {
@@ -54,8 +51,7 @@ const projects_data = [
     desc: 'Sistem otomatisasi pencatatan data obat dan transaksi apotik.',
     tags: ['Figma'],
     color: '#ffa89f',
-    stats: { interaksi: '+150%', aset: '50+' },
-    img: '🎨',
+    img: '/logo_apotik.png',
 
   },
   {
@@ -66,8 +62,7 @@ const projects_data = [
     desc: 'Sistem market place berbasis microservice.',
     tags: ['Figma'],
     color: '#ffa89f',
-    stats: { interaksi: '+150%', aset: '50+' },
-    img: '🎨',
+    img: '/logo_yaparace.jpeg',
 
   },
 ];
@@ -136,10 +131,10 @@ export default function Projects() {
                     <div className="absolute inset-0 flex items-center justify-center transition-transform duration-500"
                       style={{ transform: hoveredId === project.id ? 'scale(1.1)' : 'scale(1)' }}>
                       {project.img && (project.img.startsWith('/') || project.img.includes('.')) ? (
-                        <img 
-                          src={project.img} 
-                          alt={project.title} 
-                          className="w-full h-full object-cover" 
+                        <img
+                          src={project.img}
+                          alt={project.title}
+                          className="w-full h-full object-cover"
                         />
                       ) : (
                         <span className="text-7xl md:text-8xl">{project.img}</span>

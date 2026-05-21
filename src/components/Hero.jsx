@@ -50,7 +50,7 @@ export default function Hero() {
                 <div className="relative w-24 h-28 shrink-0 rounded-2xl overflow-hidden"
                   style={{ border: '2px solid #b24c40' }}>
                   <img
-                    src="/FOTO_DIRI.jpeg"
+                    src="/me3.jpg"
                     alt="Anisa Fatimamatus Zahro"
                     className="w-full h-full object-cover object-center"
                   />

@@ -111,7 +111,7 @@ export default function About() {
 
                 {/* Actual photo */}
                 <img
-                  src="/FOTO_DIRI.jpeg"
+                  src="/me2.jpg"
                   alt="Anisa Fatimamatus Zahro"
                   className="absolute inset-0 w-full h-full object-cover object-top"
                 />
