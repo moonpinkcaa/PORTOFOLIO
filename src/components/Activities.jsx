@@ -11,32 +11,60 @@ export default function Activities() {
       text: 'Seminar How To Improve a Good Habit'
     },
     {
-      image: '/pengalaman3.jpeg',
-      text: 'Radi Cyvro'
+      image: '/pengalaman3.jpg',
+      text: 'Cyvero'
     },
     {
       image: '/pengalaman4.jpeg',
       text: 'Osjur HMSI 2024'
     },
     {
-      image: 'pengalaman5.jpg',
+      image: '/pengalaman5.jpg',
       text: 'First meet beasiswa 2024'
     },
     {
-      image: 'pengalaman6.jpeg',
+      image: '/pengalaman6.jpeg',
       text: 'Cyvero'
     },
     {
-      image: 'pengalaman7.jpeg',
-      text: 'RaDiv Pengembangan Karakter'
-    },
-    {
-      image: 'pengalaman8.jpeg',
-      text: 'Cyvro'
-    },
-    {
-      image: 'pengalaman9.jpeg',
+      image: '/pengalaman10.jpg',
       text: 'Koalisi'
+    },
+    {
+      image: '/pengalaman8.jpg',
+      text: 'Guider'
+    },
+    {
+      image: '/pengalaman9.jpg',
+      text: 'Staff sellalu teh'
+    },
+    {
+      image: '/pengalaman11.jpg',
+      text: 'Koalisi'
+    },
+    {
+      image: '/pengalaman12.jpg',
+      text: 'Magang'
+    },
+    {
+      image: '/Pengalaman13.jpg',
+      text: 'Study group'
+    },
+    {
+      image: '/pengalaman14.jpg',
+      text: 'PKL'
+    },
+    {
+      image: '/pengalaman15.jpg',
+      text: 'Pelatihan BLKI'
+    },
+    {
+      image: '/pengalaman16.jpg',
+      text: 'Koalisi'
+    },
+    {
+      image: '/pengalaman17.jpeg',
+      text: 'Pengabdian Masyarakat'
     }
   ];
 
