@@ -66,13 +66,13 @@ export default function About() {
 
             {/* Bio paragraph — matches reference paragraph text */}
             <p className="text-sm leading-relaxed mb-3" style={{ color: 'rgba(255,180,180,0.55)' }}>
-              Saat ini aku merupakan mahasiswa Sistem Informasi di Telkom University yang suka belajar dan berkembang melalui pengalaman baru. Aku tertarik pada bidang analisis proses bisnis, UI/UX, serta pengembangan sistem.
+              Pribadi yang memiliki semangat untuk terus belajar, mencoba hal baru, dan berkembang melalui berbagai pengalaman, khususnya di bidang Sistem Informasi. Memiliki ketertarikan pada analisis proses bisnis, UI/UX, serta pengembangan sistem.
             </p>
             <p className="text-sm leading-relaxed mb-3" style={{ color: 'rgba(255,180,180,0.55)' }}>
-              Aku juga senang mengikuti kegiatan organisasi dan social event karena menjadi salah satu cara terbaik untuk bertumbuh, membangun relasi, dan belajar dari banyak orang.
+              Aktif mengikuti kegiatan organisasi dan social event sebagai sarana untuk membangun relasi, menambah wawasan, dan mengembangkan kemampuan kerja sama maupun komunikasi.
             </p>
             <p className="text-sm leading-relaxed mb-3" style={{ color: 'rgba(255,180,180,0.55)' }}>
-              Selain itu, aku memiliki ketertarikan dalam dunia konten kreatif seperti desain dan media sosial, serta senang menggabungkan sisi kreatif dan teknologi dalam setiap proses yang aku jalani.
+              Selain bidang teknologi, juga tertarik pada dunia kreatif seperti desain dan media sosial, serta senang menggabungkan kreativitas dan teknologi dalam setiap proses yang dijalani.
             </p>
             <p className="text-sm leading-relaxed mb-3" style={{ color: 'rgba(255, 255, 255, 1)' }}>
               Let's grow and create something meaningful together!
@@ -112,7 +112,7 @@ export default function About() {
                 {/* Actual photo */}
                 <img
                   src="/me2.jpg"
-                  alt="Anisa Fatimamatus Zahro"
+                  alt="Anisa Fatiimatus Zahro"
                   className="absolute inset-0 w-full h-full object-cover object-top"
                 />
 

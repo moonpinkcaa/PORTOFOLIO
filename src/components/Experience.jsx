@@ -164,10 +164,10 @@ export default function Experience() {
                             boxShadow: '0 0 16px rgba(255, 133, 122,0.15)',
                           }}>
                           {exp.logo ? (
-                            <img 
-                              src={exp.logo} 
-                              alt={exp.title} 
-                              className="w-full h-full object-contain p-1" 
+                            <img
+                              src={exp.logo}
+                              alt={exp.title}
+                              className="w-full h-full object-contain p-1"
                             />
                           ) : (
                             <span className="text-xs font-display font-black"

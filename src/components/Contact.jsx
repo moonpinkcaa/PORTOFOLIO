@@ -134,7 +134,7 @@ export default function Contact() {
                 >
                   <img
                     src="/me.jpg"
-                    alt="Anisa Fatimamatus Z."
+                    alt="Anisa Fatiimatus Zahro"
                     className="w-full h-full object-cover object-top rounded-xl"
                   />
                 </div>
@@ -150,7 +150,7 @@ export default function Contact() {
           <div className="flex items-center gap-2">
             <span className="text-xl" style={{ color: '#ff857a' }}>✿</span>
             <span className="text-[10px] uppercase tracking-widest font-display text-white/40">
-              Anisa Fatimamatus Z.
+              Anisa Fatiimatus Zahro
             </span>
           </div>
           <p className="text-[10px] uppercase tracking-widest font-display" style={{ color: 'rgba(255, 133, 122,0.6)' }}>

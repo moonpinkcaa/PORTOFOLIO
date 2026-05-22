@@ -37,7 +37,7 @@ export default function Hero() {
                   <div>
                     <p className="font-display font-bold text-sm leading-tight"
                       style={{ color: '#b24c40' }}>
-                      Anisa Fatimamatus Z.
+                      Anisa Fatiimatus Zahro
                     </p>
                     <p className="text-[11px] mt-1 font-display font-semibold"
                       style={{ color: '#b24c40', opacity: 0.8 }}>
@@ -51,7 +51,7 @@ export default function Hero() {
                   style={{ border: '2px solid #b24c40' }}>
                   <img
                     src="/me3.jpg"
-                    alt="Anisa Fatimamatus Zahro"
+                    alt="Anisa Fatiimatus Zahro"
                     className="w-full h-full object-cover object-center"
                   />
                   {/* Red overlay gradient */}
@@ -197,7 +197,7 @@ export default function Hero() {
               <div className="flex items-center justify-end gap-2 mt-4">
                 <div className="w-7 h-7 rounded-full overflow-hidden"
                   style={{ border: '1.5px solid rgba(255, 133, 122,0.5)' }}>
-                  <img src="/FOTO_DIRI.jpeg" alt="A"
+                  <img src="/me3.jpg" alt="A"
                     className="w-full h-full object-cover object-center" />
                 </div>
                 <div className="px-3 py-1 rounded-full text-[10px] font-display font-semibold text-white"
