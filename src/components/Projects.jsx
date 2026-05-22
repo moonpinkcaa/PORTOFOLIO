@@ -4,10 +4,10 @@ const projects_data = [
   {
     id: 1,
     title: 'U-Voice',
-    category: 'web Frontend',
+    category: 'Web Development',
     year: '2025',
     desc: 'Platfor sistem aspirasi & forum diskusi mahasiswa.',
-    tags: ['css', 'javascript', 'Tailwind', 'MySQL'],
+    tags: ['css', 'Node.js', 'Laravel'],
     color: '#ff857a',
     stats: {},
     img: "/logo_u-voice.png",
@@ -15,10 +15,10 @@ const projects_data = [
   {
     id: 2,
     title: 'Work4Village',
-    category: 'Frontend development',
+    category: 'Web Development',
     year: '2026',
     desc: 'Platfrom digital manajemen pemberdayaan masyarakat desa.',
-    tags: ['Next.js', 'node.js', 'laravel'],
+    tags: ['node.js', 'laravel'],
     color: '#d35b4f',
     stats: {},
     img: '/logo_wor4.png',
@@ -26,10 +26,10 @@ const projects_data = [
   {
     id: 3,
     title: 'Laundr app',
-    category: 'Portotipe UI/UX',
+    category: 'UI/UX Design',
     year: '2025',
     desc: 'Portotipe aplikasi mobile sistem operasional dan efiseiensi layanan Laundry.',
-    tags: ['Figma'],
+    tags: ['Figma', 'UI/UX Design', 'Prototyping'],
     color: '#e63946',
     stats: {},
     img: '/logo_laundryapp.jpeg',
@@ -37,10 +37,10 @@ const projects_data = [
   {
     id: 4,
     title: 'Five Finace',
-    category: 'Prototipe UI/UX',
+    category: 'UI/UX Design',
     year: '2024',
     desc: 'Portotipe aplikasi mobile pengelolaan keuangan untuk pelaku UMKM.',
-    tags: ['Figma'],
+    tags: ['Figma', 'UI/UX Design', 'Prototyping'],
     color: '#ffa89f',
     stats: {},
     img: '/logo_Five Finace.png',
@@ -48,10 +48,10 @@ const projects_data = [
   {
     id: 5,
     title: 'Aplikasi Apotik',
-    category: 'backend development',
+    category: 'Web Development',
     year: '2024',
     desc: 'Sistem otomatisasi pencatatan data obat dan transaksi apotik.',
-    tags: ['Figma'],
+    tags: ['java', 'java GUI', 'mysql'],
     color: '#ffa89f',
     stats: {},
     img: '/logo_apotik.png',
@@ -59,13 +59,13 @@ const projects_data = [
   {
     id: 6,
     title: 'Yapprece_MarketPlace',
-    category: 'System Analysis',
+    category: 'Web Development',
     year: '2025',
     desc: 'Sistem market place berbasis microservice.',
-    tags: ['Figma'],
+    tags: ['Docker', 'node.js', 'javaScript'],
     color: '#ffa89f',
     stats: {},
-    img: '/logo_yaparace.jpeg',
+    img: '/logo_yaparace.png',
   },
 ];
 
@@ -208,8 +208,8 @@ export default function Projects() {
                   {/* Action Button */}
                   <button className="flex items-center gap-2 text-xs font-display font-bold uppercase tracking-wider group/btn"
                     style={{ color: project.color }}>
-                    <span>lihat proyek</span>
-                    <span className="transition-transform group-hover/btn:translate-x-1">→</span>
+
+
                   </button>
                 </div>
 

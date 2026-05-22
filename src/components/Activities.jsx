@@ -4,7 +4,7 @@ export default function Activities() {
   const galleryItems = [
     {
       image: '/pengalaman1.jpeg',
-      text: 'Creative Process'
+      text: 'Cyvero'
     },
     {
       image: '/pengalaman2.jpg',
@@ -12,11 +12,11 @@ export default function Activities() {
     },
     {
       image: '/pengalaman3.jpeg',
-      text: 'Visual Design'
+      text: 'Radi Cyvro'
     },
     {
       image: '/pengalaman4.jpeg',
-      text: 'Ospek jurusan HMSI 2024'
+      text: 'Osjur HMSI 2024'
     },
     {
       image: 'pengalaman5.jpg',
@@ -28,15 +28,15 @@ export default function Activities() {
     },
     {
       image: 'pengalaman7.jpeg',
-      text: 'Rapat Divisi Pengembangan Karakter'
+      text: 'RaDiv Pengembangan Karakter'
     },
     {
       image: 'pengalaman8.jpeg',
-      text: 'Creative Arts'
+      text: 'Cyvro'
     },
     {
       image: 'pengalaman9.jpeg',
-      text: 'UI/UX &Web Design'
+      text: 'Koalisi'
     }
   ];
 
